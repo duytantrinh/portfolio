@@ -300,7 +300,7 @@ export const Experience = () => {
           </SectionTitle>
 
           <Mailbox
-            position-x={1.5}
+            position-x={1}
             position-y={0.25}
             position-z={0.5}
             rotation-y={Math.PI * 1.25}
