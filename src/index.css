@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+:root {
+  --primary-color: #c8ea80;
+  --secondary-color: #2ef2ff;
+  --text-color: #c4cbf5;
+  --text-light-color: #eaedff;
+}
+
+.button_background {
+  background: linear-gradient(#334679, #162561);
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.interface {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sections {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.section-top {
+  align-items: flex-start;
+}
+
+.section-bottom {
+  align-items: flex-end;
+}
+
+.section-right {
+  justify-content: flex-end;
+}
+
+.section-left {
+  justify-content: flex-start;
+}
+
+/* HOME SECTION */
+.home-info {
+  width: 380px;
+  margin: 50px 20px 0px;
+}
+
+.home-description {
+  line-height: 1.6rem;
+  color: var(--text-light-color);
+}
+
+.home_skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+
+.skill {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.8rem;
+  width: 320px;
+  max-width: 100%;
+}
+
+.skill_label {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.home_skill_label_image {
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+}
+
+.home_skill_label_name {
+  color: var(--text-color);
+
+  font-size: 1rem;
+  margin: 0;
+  z-index: 2;
+}
+
+.home_skill_level {
+  padding: 5px;
+  border-radius: 7px;
+  width: 110px;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* REACT SECTION */
+.reacts {
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.react {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+  width: 320px;
+  max-width: 100%;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.react_label {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.react_label_image {
+  width: 50px;
+  height: 50px;
+}
+
+.react_label_name {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.react_label_name:hover {
+  color: var(--secondary-color);
+}
+
+.react_label_description {
+  margin: 0;
+  color: var(--text-color);
+}
+
+/* PROJECTS */
+.projects {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 180px);
+  width: 500px;
+  max-width: 100%;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.project:hover,
+.react:hover {
+  outline: 1px solid var(--secondary-color);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.project_image {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+}
+
+.project_details {
+  padding: 0.5rem;
+}
+
+.project_details_name {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.project_details_description {
+  color: var(--text-light-color);
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* NEXTJS */
+.nextjs_infor {
+  margin: 1rem;
+  padding: 1rem;
+  background: linear-gradient(#1b275a, #0e1434);
+  backdrop-filter: blur(8px);
+  border-color: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  min-width: 280px;
+  max-width: 350px;
+}
+.nextjs_infor_name {
+  color: var(--text-light-color);
+}
+.nextjs_infor_description {
+  color: var(--text-color);
+  line-height: 1.4rem;
+}
+
+/* CONTACT */
+.contact {
+  margin: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.contact_name {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.contact_address {
+  color: var(--text-light-color);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.contact_socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact_social_icon {
+  height: 32px;
+  width: 32px;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 4rem;
+  right: 4rem;
+  background: #121a3b;
+  backdrop-filter: blur(8px);
+}
+
+.menu_left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  color: var(--primary-color);
+}
+.menu_left > a {
+  color: var(--primary-color);
+}
+
+.menu_left > a:hover {
+  text-decoration: underline;
+}
+
+.menu_buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.menu_button {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.menu_button:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* LOADING-SCREEN */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 4rem;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: #b8c6db;
+  background-image: linear-gradient(0deg, #b8c6db 0%, #f5f7fa 74%);
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.loading_screen_hidden {
+  animation: fade-out 0.5s ease-in-out forwards 1s;
+  pointer-events: none;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loading_screen_title {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.progress_container {
+  width: 100%;
+  height: 1rem;
+  background-color: rgb(102 106 113 / 42%);
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.progress_bar {
+  width: 0;
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: width 0.5s ease-in-out;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+  .mobile_section_top {
+    align-items: flex-start;
+  }
+  .mobile_section_bottom {
+    align-items: flex-end;
+  }
+  .mobile_section_right {
+    justify-content: flex-start;
+  }
+
+  .mobile_section_left {
+    justify-content: flex-start;
+  }
+
+  p {
+    margin: 0.75rem 0;
+  }
+
+  /* Menu */
+
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* HOME */
+  .home_skills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .home-info {
+    width: 80%;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .scrollbar_responsive {
+    margin-top: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  ::-webkit-scrollbar {
+    height: 8px;
+    width: 4px;
+    background: gray;
+  }
+  ::-webkit-scrollbar-thumb:horizontal {
+    background: #000;
+    border-radius: 10px;
+  }
+
+  /* SKILLS */
+  .skills,
+  .projects,
+  .reacts {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .react {
+    width: 250px;
+  }
+
+  .skill {
+    padding: 0.5rem;
+    min-width: 220px;
+    margin: 0;
+  }
+
+  /* REACT project */
+  .projects {
+    justify-content: flex-start;
+  }
+
+  .react_label {
+    flex-direction: column;
+    min-width: 220px;
+  }
+
+  .react_label_image {
+    width: 100%;
+    height: 150px;
+  }
+
+  .react_label {
+    align-items: flex-start;
+  }
+  /* PROJECTS */
+
+  .project {
+    min-width: 220px;
+  }
+
+  .project_image {
+    height: 150px;
+  }
+
+  .contact,
+  .nextjs_infor {
+    width: 85%;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .loading_screen_title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    padding: 0.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .skills,
+  .projects,
+  .reacts {
+    gap: 0.7rem;
+  }
+
+  .react {
+    width: 220px;
+  }
+
+  .react_label_image {
+    height: 120px;
+  }
+
+  .react_label {
+    min-width: 200px;
+  }
+  .nextjs_infor {
+    padding: 0.75rem;
+  }
+
+  .nextjs_infor_description {
+    font-size: 0.75rem;
+  }
+}
