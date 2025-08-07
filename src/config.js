@@ -14,6 +14,33 @@ export const home = {
 
 export const skills = [
   {
+    name: "Reactjs",
+    icon: "icons/react-native.png",
+    level: 80,
+  },
+ 
+  {
+    name: "Graphql",
+    icon: "icons/react-native.png",
+    level: 80,
+  },
+   {
+    name: "React3D",
+    icon: "icons/threejs.png",
+    level: 50,
+  },
+  {
+    name: "Framermotion",
+    icon: "icons/threejs.png",
+    level: 50,
+  },
+  {
+    name: "GSAP",
+    icon: "icons/react-native.png",
+    level: 80,
+  },
+ 
+  {
     name: "HTML",
 
     level: 80,
@@ -49,16 +76,7 @@ export const skills = [
     level: 80,
   },
 
-  {
-    name: "Reactjs",
-    icon: "icons/react-native.png",
-    level: 80,
-  },
-  {
-    name: "React3D",
-    icon: "icons/threejs.png",
-    level: 50,
-  },
+ 
   {
     name: "Nextjs",
     icon: "icons/nextjs.png",
