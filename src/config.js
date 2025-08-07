@@ -167,7 +167,7 @@ export const projects = [
   {
     name: "GraphQl & MongoDb",
     description: "React, Graphql, Moongoose and MongoDb",
-    image: "projects/framer_motion.jpg",
+    image: "projects/graphql.jpg",
     link: "https://tantrinh-graphql.onrender.com/",
     github: "https://github.com/duytantrinh/graphql-expense-tracking",
   },
