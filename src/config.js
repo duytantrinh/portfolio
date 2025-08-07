@@ -6,7 +6,7 @@ export const config = {
 export const home = {
   title: "TANTRINH",
   intro:
-    " Hi, My name is Duy Tan Trinh. I'm a self-taught web developer. I like to create solid and scalable website with greate user experience. My skills:",
+    " Hi, My name is Duy Tan Trinh. I'm a self-taught web developer. I like to create solid and scalable website with great user experience. My skills:",
   email: "trinhtan11@gmail.com",
   phone: "437-9960195",
   github: "https://github.com/duytantrinh?tab=repositories",
@@ -166,7 +166,7 @@ export const projects = [
   },
   {
     name: "GraphQl & MongoDb",
-    description: "Modern app building React, Graphql and MongoDb",
+    description: "React, Graphql, Moongoose and MongoDb",
     image: "projects/framer_motion.jpg",
     link: "https://tantrinh-graphql.onrender.com/",
     github: "https://github.com/duytantrinh/graphql-expense-tracking",
