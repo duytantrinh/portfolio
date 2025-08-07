@@ -165,11 +165,11 @@ export const projects = [
     github: "https://github.com/duytantrinh/cabin-admin-dashboard",
   },
   {
-    name: "Framer Motion",
-    description: "from basic to advanced framer motion",
+    name: "GraphQl & MongoDb",
+    description: "Modern app building React, Graphql and MongoDb",
     image: "projects/framer_motion.jpg",
-    link: "https://tantrinh-framermotion.vercel.app/",
-    github: "https://tantrinh-framermotion.vercel.app/",
+    link: "https://tantrinh-graphql.onrender.com/",
+    github: "https://github.com/duytantrinh/graphql-expense-tracking",
   },
   // {
   //   name: "Exercise API",
